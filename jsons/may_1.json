@@ -1,0 +1,2689 @@
+{
+    "requestId": "9f6c9313-c81c-4d48-ab69-7b90e2fff0da",
+    "status": "SUCCESS",
+    "data": {
+        "result": {
+            "totalCount": 10020,
+            "previous": "https://api.bitmovin.com/v1/encoding/encodings?offset=0&limit=100&createdAtNewerThan=2023-05-01T23%3A00%3A00.000Z&createdAtOlderThan=2023-06-01T22%3A59%3A59.999Z&status=FINISHED",
+            "next": "https://api.bitmovin.com/v1/encoding/encodings?offset=100&limit=100&createdAtNewerThan=2023-05-01T23%3A00%3A00.000Z&createdAtOlderThan=2023-06-01T22%3A59%3A59.999Z&status=FINISHED",
+            "items": [
+                {
+                    "id": "c455ee36-b611-406d-90d1-38d90b7f626d",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/voto_electronico.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T22:39:35Z",
+                    "modifiedAt": "2023-06-01T22:43:47Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T22:39:35Z",
+                    "queuedAt": "2023-06-01T22:39:36Z",
+                    "runningAt": "2023-06-01T22:39:55Z",
+                    "finishedAt": "2023-06-01T22:43:46Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "television",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "632bc98b-4c20-416c-976e-e964ec846cd7",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/imitacionesjonan2.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T22:33:01Z",
+                    "modifiedAt": "2023-06-01T22:36:37Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T22:33:01Z",
+                    "queuedAt": "2023-06-01T22:33:02Z",
+                    "runningAt": "2023-06-01T22:33:15Z",
+                    "finishedAt": "2023-06-01T22:36:36Z",
+                    "progress": 100,
+                    "labels": [
+                        "television",
+                        "bitmovin",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "9b8c447b-c867-4e94-9985-75a0c213908f",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/MONCHIULTRA.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T22:27:05Z",
+                    "modifiedAt": "2023-06-01T22:31:46Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T22:27:06Z",
+                    "queuedAt": "2023-06-01T22:27:06Z",
+                    "runningAt": "2023-06-01T22:27:15Z",
+                    "finishedAt": "2023-06-01T22:31:45Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "dmq"
+                    ]
+                },
+                {
+                    "id": "7defc93c-c0dd-46fd-88a9-46b79c61448e",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/castro.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T22:22:09Z",
+                    "modifiedAt": "2023-06-01T22:23:50Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T22:22:09Z",
+                    "queuedAt": "2023-06-01T22:22:10Z",
+                    "runningAt": "2023-06-01T22:22:15Z",
+                    "finishedAt": "2023-06-01T22:23:49Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "dmq"
+                    ]
+                },
+                {
+                    "id": "4c5db8c9-cab1-4f6b-9023-e4e2649a4f94",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/mendidelnidoJr.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T22:22:08Z",
+                    "modifiedAt": "2023-06-01T22:25:16Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T22:22:09Z",
+                    "queuedAt": "2023-06-01T22:22:09Z",
+                    "runningAt": "2023-06-01T22:23:39Z",
+                    "finishedAt": "2023-06-01T22:25:16Z",
+                    "progress": 100,
+                    "labels": [
+                        "dmq",
+                        "prewarmed",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "42f4b0af-42bf-45c9-9363-8b4698d828b4",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/MANTEOMENDI.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T22:20:05Z",
+                    "modifiedAt": "2023-06-01T22:22:34Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T22:20:06Z",
+                    "queuedAt": "2023-06-01T22:20:06Z",
+                    "runningAt": "2023-06-01T22:20:16Z",
+                    "finishedAt": "2023-06-01T22:22:33Z",
+                    "progress": 100,
+                    "labels": [
+                        "dmq",
+                        "prewarmed",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "285b5195-e68c-4d74-aa85-f34f915b6cb4",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/monchiFIESTA.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T22:10:38Z",
+                    "modifiedAt": "2023-06-01T22:14:10Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T22:10:38Z",
+                    "queuedAt": "2023-06-01T22:10:39Z",
+                    "runningAt": "2023-06-01T22:10:42Z",
+                    "finishedAt": "2023-06-01T22:14:09Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "dmq"
+                    ]
+                },
+                {
+                    "id": "41d63dd9-0c73-4931-ac1a-2a8d92bd9762",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/asrafvsjonann.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T22:07:01Z",
+                    "modifiedAt": "2023-06-01T22:11:44Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T22:07:01Z",
+                    "queuedAt": "2023-06-01T22:07:02Z",
+                    "runningAt": "2023-06-01T22:07:22Z",
+                    "finishedAt": "2023-06-01T22:11:43Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "television"
+                    ]
+                },
+                {
+                    "id": "5d7f02b1-1e3d-4c6e-bcee-2d1b4eeac203",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/entradajugadores.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T21:55:52Z",
+                    "modifiedAt": "2023-06-01T22:01:55Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T21:55:52Z",
+                    "queuedAt": "2023-06-01T21:55:52Z",
+                    "runningAt": "2023-06-01T21:58:28Z",
+                    "finishedAt": "2023-06-01T22:01:54Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "dmq"
+                    ]
+                },
+                {
+                    "id": "3f29494e-78ab-4716-8eef-c5b6e060e885",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/adarasraf2.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T21:55:48Z",
+                    "modifiedAt": "2023-06-01T21:59:57Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T21:55:49Z",
+                    "queuedAt": "2023-06-01T21:55:49Z",
+                    "runningAt": "2023-06-01T21:55:52Z",
+                    "finishedAt": "2023-06-01T21:59:56Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "television"
+                    ]
+                },
+                {
+                    "id": "ca3a3a89-02ac-4f9e-939f-466c32d0fc68",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/adaraasraf1.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T21:55:38Z",
+                    "modifiedAt": "2023-06-01T22:02:21Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T21:55:39Z",
+                    "queuedAt": "2023-06-01T21:55:39Z",
+                    "runningAt": "2023-06-01T21:57:45Z",
+                    "finishedAt": "2023-06-01T22:02:20Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "television"
+                    ]
+                },
+                {
+                    "id": "11aa0f14-6acb-4fb1-9012-2ad2cd2e93e8",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/coleopenitencias.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T21:37:51Z",
+                    "modifiedAt": "2023-06-01T21:42:03Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T21:37:52Z",
+                    "queuedAt": "2023-06-01T21:37:52Z",
+                    "runningAt": "2023-06-01T21:38:00Z",
+                    "finishedAt": "2023-06-01T21:42:02Z",
+                    "progress": 100,
+                    "labels": [
+                        "television",
+                        "bitmovin",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "5f5bea22-e604-4afa-b499-b81f47531744",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/MONCHI_LIBERACION.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T21:31:32Z",
+                    "modifiedAt": "2023-06-01T21:33:50Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T21:31:32Z",
+                    "queuedAt": "2023-06-01T21:31:33Z",
+                    "runningAt": "2023-06-01T21:31:39Z",
+                    "finishedAt": "2023-06-01T21:33:50Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "dmq",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "0ecbf84b-5bf3-4f7c-96d9-1a85c3ee49ab",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/exSFC.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T21:27:47Z",
+                    "modifiedAt": "2023-06-01T21:32:32Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T21:27:47Z",
+                    "queuedAt": "2023-06-01T21:27:48Z",
+                    "runningAt": "2023-06-01T21:27:49Z",
+                    "finishedAt": "2023-06-01T21:32:32Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "dmq",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "c7b05747-fac1-48e5-8c70-347ddc8509a6",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/opiniones_elecciones.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T21:18:20Z",
+                    "modifiedAt": "2023-06-01T21:24:51Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T21:18:21Z",
+                    "queuedAt": "2023-06-01T21:18:21Z",
+                    "runningAt": "2023-06-01T21:20:26Z",
+                    "finishedAt": "2023-06-01T21:24:50Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "television"
+                    ]
+                },
+                {
+                    "id": "a80703a3-33c1-4b0a-a638-166d35a105b3",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/bolloalmaokk.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T21:15:54Z",
+                    "modifiedAt": "2023-06-01T21:18:15Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T21:15:55Z",
+                    "queuedAt": "2023-06-01T21:15:55Z",
+                    "runningAt": "2023-06-01T21:15:57Z",
+                    "finishedAt": "2023-06-01T21:18:14Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "television"
+                    ]
+                },
+                {
+                    "id": "3527ae5e-4bac-45fc-93cc-d7cd372200dc",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/iker_elecciones.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T21:14:08Z",
+                    "modifiedAt": "2023-06-01T21:16:43Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T21:14:09Z",
+                    "queuedAt": "2023-06-01T21:14:09Z",
+                    "runningAt": "2023-06-01T21:14:17Z",
+                    "finishedAt": "2023-06-01T21:16:43Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "television",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "7934eb3d-bdba-4648-8b93-dea99d661ab5",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/raquelbollosbcarrerahija.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T21:10:11Z",
+                    "modifiedAt": "2023-06-01T21:12:35Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T21:10:12Z",
+                    "queuedAt": "2023-06-01T21:10:13Z",
+                    "runningAt": "2023-06-01T21:10:17Z",
+                    "finishedAt": "2023-06-01T21:12:35Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "television"
+                    ]
+                },
+                {
+                    "id": "578dda83-4f27-4026-8c54-73a5ef63bbae",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/rec sev.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T21:07:46Z",
+                    "modifiedAt": "2023-06-01T21:11:50Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T21:07:47Z",
+                    "queuedAt": "2023-06-01T21:07:47Z",
+                    "runningAt": "2023-06-01T21:09:54Z",
+                    "finishedAt": "2023-06-01T21:11:49Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "dmq",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "c32a9120-1d88-451c-872a-ff1f94ea805d",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/SEVILLA TIMES SQUARE.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T21:07:25Z",
+                    "modifiedAt": "2023-06-01T21:10:14Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T21:07:26Z",
+                    "queuedAt": "2023-06-01T21:07:26Z",
+                    "runningAt": "2023-06-01T21:07:37Z",
+                    "finishedAt": "2023-06-01T21:10:13Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "dmq"
+                    ]
+                },
+                {
+                    "id": "65aee8b4-0a28-4e50-b866-609c4ef50d55",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/googlesevilla.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T21:04:08Z",
+                    "modifiedAt": "2023-06-01T21:05:14Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T21:04:10Z",
+                    "queuedAt": "2023-06-01T21:04:11Z",
+                    "runningAt": "2023-06-01T21:04:17Z",
+                    "finishedAt": "2023-06-01T21:05:13Z",
+                    "progress": 100,
+                    "labels": [
+                        "dmq",
+                        "prewarmed",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "baef7e8a-c461-4bfd-94ae-421a26e7e224",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "mitele-no-drm/momentazoCADducha.[0].mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T20:53:20Z",
+                    "modifiedAt": "2023-06-01T20:57:26Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T20:53:22Z",
+                    "queuedAt": "2023-06-01T20:53:22Z",
+                    "runningAt": "2023-06-01T20:53:33Z",
+                    "finishedAt": "2023-06-01T20:57:25Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "mitele",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "647ca8c7-ddf9-477c-9789-fd425e77bc54",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/promogypsi.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T20:45:31Z",
+                    "modifiedAt": "2023-06-01T20:47:06Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T20:45:31Z",
+                    "queuedAt": "2023-06-01T20:45:32Z",
+                    "runningAt": "2023-06-01T20:45:42Z",
+                    "finishedAt": "2023-06-01T20:47:05Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "television",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "61888f65-1fe1-4824-86cb-c2559514f905",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "mitele-no-drm/depcuanoc010623.[0].mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T20:43:17Z",
+                    "modifiedAt": "2023-06-01T20:48:14Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T20:43:18Z",
+                    "queuedAt": "2023-06-01T20:43:18Z",
+                    "runningAt": "2023-06-01T20:45:16Z",
+                    "finishedAt": "2023-06-01T20:48:13Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "mitele"
+                    ]
+                },
+                {
+                    "id": "7200255a-cbe8-4b08-bf38-45d70ab65a88",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "mitele-no-drm/deptt5noc010623.[0].mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T20:41:58Z",
+                    "modifiedAt": "2023-06-01T20:46:32Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T20:41:58Z",
+                    "queuedAt": "2023-06-01T20:41:59Z",
+                    "runningAt": "2023-06-01T20:42:12Z",
+                    "finishedAt": "2023-06-01T20:46:32Z",
+                    "progress": 100,
+                    "labels": [
+                        "mitele",
+                        "bitmovin",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "e9acb36e-0f62-45f4-90cb-2e27238b57c5",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/ACUNA FERNET.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T20:35:31Z",
+                    "modifiedAt": "2023-06-01T20:37:57Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T20:35:32Z",
+                    "queuedAt": "2023-06-01T20:35:33Z",
+                    "runningAt": "2023-06-01T20:35:49Z",
+                    "finishedAt": "2023-06-01T20:37:56Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "dmq",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "4ddd8327-6256-4b01-8279-9dffeb155537",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/WhatsApp Video 2023-06-01 at 22.10.03.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T20:15:33Z",
+                    "modifiedAt": "2023-06-01T20:18:24Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T20:15:34Z",
+                    "queuedAt": "2023-06-01T20:15:34Z",
+                    "runningAt": "2023-06-01T20:15:48Z",
+                    "finishedAt": "2023-06-01T20:18:23Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "dmq",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "62e251a9-eaf7-403b-8328-922e0401a142",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/HINCHAS ARBITRO ROMA.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T20:09:33Z",
+                    "modifiedAt": "2023-06-01T20:10:57Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T20:09:34Z",
+                    "queuedAt": "2023-06-01T20:09:34Z",
+                    "runningAt": "2023-06-01T20:09:39Z",
+                    "finishedAt": "2023-06-01T20:10:56Z",
+                    "progress": 100,
+                    "labels": [
+                        "dmq",
+                        "prewarmed",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "908aac6f-a838-4416-bb4c-afa5b4a54c05",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "mitele-no-drm/infonoc010623.[0].mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T19:52:15Z",
+                    "modifiedAt": "2023-06-01T20:00:32Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:52:15Z",
+                    "queuedAt": "2023-06-01T19:52:16Z",
+                    "runningAt": "2023-06-01T19:54:23Z",
+                    "finishedAt": "2023-06-01T20:00:31Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "mitele"
+                    ]
+                },
+                {
+                    "id": "cb875a37-a3f5-4eef-8365-cdc388d0a1bd",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/castroooooayto.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:50:30Z",
+                    "modifiedAt": "2023-06-01T19:53:57Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:50:30Z",
+                    "queuedAt": "2023-06-01T19:50:30Z",
+                    "runningAt": "2023-06-01T19:50:38Z",
+                    "finishedAt": "2023-06-01T19:53:56Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "dmq",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "e66639cf-0b6d-402b-b1c0-b2004c067a2b",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/010623caidabaiden.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:50:26Z",
+                    "modifiedAt": "2023-06-01T19:54:58Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:50:27Z",
+                    "queuedAt": "2023-06-01T19:50:27Z",
+                    "runningAt": "2023-06-01T19:52:37Z",
+                    "finishedAt": "2023-06-01T19:54:58Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "television"
+                    ]
+                },
+                {
+                    "id": "b799c706-488a-4f55-bf73-c5ac185e8f11",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/010623explosionbadajoz.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:42:40Z",
+                    "modifiedAt": "2023-06-01T19:46:10Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:42:40Z",
+                    "queuedAt": "2023-06-01T19:42:41Z",
+                    "runningAt": "2023-06-01T19:43:59Z",
+                    "finishedAt": "2023-06-01T19:46:09Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "television"
+                    ]
+                },
+                {
+                    "id": "bcd3ebad-9cf6-4145-a001-234ec7b7cb73",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/010623chicaalbacete.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:42:38Z",
+                    "modifiedAt": "2023-06-01T19:45:07Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:42:39Z",
+                    "queuedAt": "2023-06-01T19:42:39Z",
+                    "runningAt": "2023-06-01T19:42:48Z",
+                    "finishedAt": "2023-06-01T19:45:06Z",
+                    "progress": 100,
+                    "labels": [
+                        "television",
+                        "prewarmed",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "0a5560b6-a92a-410d-98cc-8006c4870337",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/010623politicosingles.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:42:34Z",
+                    "modifiedAt": "2023-06-01T19:47:36Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:42:38Z",
+                    "queuedAt": "2023-06-01T19:42:38Z",
+                    "runningAt": "2023-06-01T19:45:13Z",
+                    "finishedAt": "2023-06-01T19:47:35Z",
+                    "progress": 100,
+                    "labels": [
+                        "television",
+                        "bitmovin",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "a82b8272-a7fa-4b50-8494-e06d9514a827",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/010623abusosiglesia.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:42:31Z",
+                    "modifiedAt": "2023-06-01T19:44:15Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:42:31Z",
+                    "queuedAt": "2023-06-01T19:42:32Z",
+                    "runningAt": "2023-06-01T19:42:38Z",
+                    "finishedAt": "2023-06-01T19:44:14Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "television",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "5d643f3d-930f-4049-8892-70f4ef84ede6",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/gudl.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:42:26Z",
+                    "modifiedAt": "2023-06-01T19:46:57Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:42:27Z",
+                    "queuedAt": "2023-06-01T19:42:27Z",
+                    "runningAt": "2023-06-01T19:43:56Z",
+                    "finishedAt": "2023-06-01T19:46:56Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "dmq",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "9ffbaa01-d076-4a83-8f20-695a39c66471",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/CANCIONMENDI.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:38:38Z",
+                    "modifiedAt": "2023-06-01T19:43:24Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:38:39Z",
+                    "queuedAt": "2023-06-01T19:38:39Z",
+                    "runningAt": "2023-06-01T19:40:40Z",
+                    "finishedAt": "2023-06-01T19:43:24Z",
+                    "progress": 100,
+                    "labels": [
+                        "dmq",
+                        "bitmovin",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "080b4663-124e-4b55-95a0-43ef7e8a4538",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/WhatsApp Video 2023-06-01 at 21.37.27.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:38:31Z",
+                    "modifiedAt": "2023-06-01T19:41:49Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:38:32Z",
+                    "queuedAt": "2023-06-01T19:38:32Z",
+                    "runningAt": "2023-06-01T19:38:38Z",
+                    "finishedAt": "2023-06-01T19:41:48Z",
+                    "progress": 100,
+                    "labels": [
+                        "dmq",
+                        "bitmovin",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "c69213c8-488d-4e85-8331-a41738d3ced5",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/WhatsApp Video 2023-06-01 at 21.23.25.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:34:56Z",
+                    "modifiedAt": "2023-06-01T19:36:19Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:34:57Z",
+                    "queuedAt": "2023-06-01T19:34:57Z",
+                    "runningAt": "2023-06-01T19:34:58Z",
+                    "finishedAt": "2023-06-01T19:36:18Z",
+                    "progress": 100,
+                    "labels": [
+                        "dmq",
+                        "prewarmed",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "b7cc62d8-fd52-4e8f-9485-ae0392d7651b",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVID20230601_0041.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:27:19Z",
+                    "modifiedAt": "2023-06-01T19:29:11Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:27:19Z",
+                    "queuedAt": "2023-06-01T19:27:20Z",
+                    "runningAt": "2023-06-01T19:27:29Z",
+                    "finishedAt": "2023-06-01T19:29:10Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "atlas"
+                    ]
+                },
+                {
+                    "id": "8e1f8522-765c-4c59-80bb-780c12241a06",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVID20230601_0040.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:23:58Z",
+                    "modifiedAt": "2023-06-01T19:25:36Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:24:01Z",
+                    "queuedAt": "2023-06-01T19:24:01Z",
+                    "runningAt": "2023-06-01T19:24:12Z",
+                    "finishedAt": "2023-06-01T19:25:36Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "atlas"
+                    ]
+                },
+                {
+                    "id": "9c431e72-b079-4b02-89c9-216b3feb1362",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/discru mendi.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:18:29Z",
+                    "modifiedAt": "2023-06-01T19:21:16Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:18:29Z",
+                    "queuedAt": "2023-06-01T19:18:29Z",
+                    "runningAt": "2023-06-01T19:18:32Z",
+                    "finishedAt": "2023-06-01T19:21:15Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "dmq"
+                    ]
+                },
+                {
+                    "id": "3b096bb9-c7bc-4b4d-a3b5-ee27e8363083",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVID20230601_0039.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:16:16Z",
+                    "modifiedAt": "2023-06-01T19:18:17Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:16:17Z",
+                    "queuedAt": "2023-06-01T19:16:17Z",
+                    "runningAt": "2023-06-01T19:16:32Z",
+                    "finishedAt": "2023-06-01T19:18:16Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "atlas"
+                    ]
+                },
+                {
+                    "id": "74b2883f-1b44-40f8-8176-7211470e71ca",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/MONCHIMNOOK.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:12:59Z",
+                    "modifiedAt": "2023-06-01T19:17:11Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:13:00Z",
+                    "queuedAt": "2023-06-01T19:13:00Z",
+                    "runningAt": "2023-06-01T19:14:30Z",
+                    "finishedAt": "2023-06-01T19:17:10Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "dmq"
+                    ]
+                },
+                {
+                    "id": "ee30fa6a-5383-4005-ad9d-bd4cc5701a9e",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVID20230601_0038.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:12:17Z",
+                    "modifiedAt": "2023-06-01T19:14:00Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:12:17Z",
+                    "queuedAt": "2023-06-01T19:12:18Z",
+                    "runningAt": "2023-06-01T19:12:20Z",
+                    "finishedAt": "2023-06-01T19:13:59Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "atlas"
+                    ]
+                },
+                {
+                    "id": "e486254f-67c2-4caa-9385-3d8c2375ebde",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0080.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T19:08:23Z",
+                    "modifiedAt": "2023-06-01T19:14:13Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:08:24Z",
+                    "queuedAt": "2023-06-01T19:08:24Z",
+                    "runningAt": "2023-06-01T19:11:04Z",
+                    "finishedAt": "2023-06-01T19:14:12Z",
+                    "progress": 100,
+                    "labels": [
+                        "atlas",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "0ec43fa7-eea8-4869-b240-7734e9ad4483",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0079.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T19:07:03Z",
+                    "modifiedAt": "2023-06-01T19:13:51Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:07:03Z",
+                    "queuedAt": "2023-06-01T19:07:04Z",
+                    "runningAt": "2023-06-01T19:09:36Z",
+                    "finishedAt": "2023-06-01T19:13:50Z",
+                    "progress": 100,
+                    "labels": [
+                        "atlas",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "09b72982-146c-4e53-bfe4-8a98d86cf375",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0078.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T19:05:14Z",
+                    "modifiedAt": "2023-06-01T19:09:44Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T19:05:15Z",
+                    "queuedAt": "2023-06-01T19:05:15Z",
+                    "runningAt": "2023-06-01T19:05:31Z",
+                    "finishedAt": "2023-06-01T19:09:43Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "atlas",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "3ed88b20-0b6b-4ad2-b6c8-d32c2a16fcb3",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "mitele-no-drm/cad010623.[0].mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T18:57:09Z",
+                    "modifiedAt": "2023-06-01T19:10:40Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:57:10Z",
+                    "queuedAt": "2023-06-01T18:57:10Z",
+                    "runningAt": "2023-06-01T18:59:24Z",
+                    "finishedAt": "2023-06-01T19:10:40Z",
+                    "progress": 100,
+                    "labels": [
+                        "mitele",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "275b5527-03c9-4846-80f6-aa9d8f8a041f",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0077.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T18:52:47Z",
+                    "modifiedAt": "2023-06-01T19:00:03Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:52:48Z",
+                    "queuedAt": "2023-06-01T18:52:48Z",
+                    "runningAt": "2023-06-01T18:54:55Z",
+                    "finishedAt": "2023-06-01T19:00:03Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "atlas"
+                    ]
+                },
+                {
+                    "id": "55940ed5-4878-4262-a694-6c2b249dada8",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVID20230601_0037.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T18:46:18Z",
+                    "modifiedAt": "2023-06-01T18:51:12Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:46:19Z",
+                    "queuedAt": "2023-06-01T18:46:19Z",
+                    "runningAt": "2023-06-01T18:48:49Z",
+                    "finishedAt": "2023-06-01T18:51:12Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "atlas"
+                    ]
+                },
+                {
+                    "id": "69d728dc-80b8-4028-956d-8e8fbf025eab",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0076.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T18:45:39Z",
+                    "modifiedAt": "2023-06-01T18:49:20Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:45:40Z",
+                    "queuedAt": "2023-06-01T18:45:40Z",
+                    "runningAt": "2023-06-01T18:45:55Z",
+                    "finishedAt": "2023-06-01T18:49:19Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "atlas"
+                    ]
+                },
+                {
+                    "id": "eda943a7-17b3-40c7-a2e9-7f70c238d556",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0075.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T18:40:23Z",
+                    "modifiedAt": "2023-06-01T18:42:51Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:40:24Z",
+                    "queuedAt": "2023-06-01T18:40:24Z",
+                    "runningAt": "2023-06-01T18:40:36Z",
+                    "finishedAt": "2023-06-01T18:42:51Z",
+                    "progress": 100,
+                    "labels": [
+                        "atlas",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "2083499e-cf84-44cb-9b50-399439f20d2f",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVID20230601_0036.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T18:37:18Z",
+                    "modifiedAt": "2023-06-01T18:40:13Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:37:19Z",
+                    "queuedAt": "2023-06-01T18:37:19Z",
+                    "runningAt": "2023-06-01T18:38:49Z",
+                    "finishedAt": "2023-06-01T18:40:13Z",
+                    "progress": 100,
+                    "labels": [
+                        "atlas",
+                        "bitmovin",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "ec45f142-ead6-49c9-bba1-48a604bb0e69",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/capellan.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T18:36:05Z",
+                    "modifiedAt": "2023-06-01T18:38:15Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:36:06Z",
+                    "queuedAt": "2023-06-01T18:36:06Z",
+                    "runningAt": "2023-06-01T18:36:15Z",
+                    "finishedAt": "2023-06-01T18:38:14Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "dmq",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "02b4c023-183c-40c2-b70e-29e4232686a1",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/rafapartesintimaschelo.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T18:35:45Z",
+                    "modifiedAt": "2023-06-01T18:38:25Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:35:46Z",
+                    "queuedAt": "2023-06-01T18:35:46Z",
+                    "runningAt": "2023-06-01T18:36:05Z",
+                    "finishedAt": "2023-06-01T18:38:24Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "television"
+                    ]
+                },
+                {
+                    "id": "e404254a-8b5a-45ff-b028-1ef4e1b9f276",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/TROPIEZO ROMAREY.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T18:34:03Z",
+                    "modifiedAt": "2023-06-01T18:35:37Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:34:04Z",
+                    "queuedAt": "2023-06-01T18:34:04Z",
+                    "runningAt": "2023-06-01T18:34:15Z",
+                    "finishedAt": "2023-06-01T18:35:37Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "dmq",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "e3643259-7340-418b-a852-663f73ff5b05",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/1explosionCADtestigo.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T18:33:38Z",
+                    "modifiedAt": "2023-06-01T18:39:41Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:33:39Z",
+                    "queuedAt": "2023-06-01T18:33:39Z",
+                    "runningAt": "2023-06-01T18:34:20Z",
+                    "finishedAt": "2023-06-01T18:39:40Z",
+                    "progress": 100,
+                    "labels": [
+                        "television",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "60b05204-d60f-4fd2-9170-9ecbfa02247b",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/mamarafamora.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T18:23:50Z",
+                    "modifiedAt": "2023-06-01T18:28:56Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:23:51Z",
+                    "queuedAt": "2023-06-01T18:23:52Z",
+                    "runningAt": "2023-06-01T18:23:54Z",
+                    "finishedAt": "2023-06-01T18:28:55Z",
+                    "progress": 100,
+                    "labels": [
+                        "television",
+                        "bitmovin",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "c2a8328a-13ec-4312-9108-49c0b5612538",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "mitele-no-drm/nplus010623.[0].mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T18:22:52Z",
+                    "modifiedAt": "2023-06-01T18:33:50Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:22:53Z",
+                    "queuedAt": "2023-06-01T18:22:53Z",
+                    "runningAt": "2023-06-01T18:25:19Z",
+                    "finishedAt": "2023-06-01T18:33:49Z",
+                    "progress": 100,
+                    "labels": [
+                        "mitele",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "3b5939ad-8320-4b3d-81aa-108b1cd98ae6",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVID20230601_0035.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T18:14:22Z",
+                    "modifiedAt": "2023-06-01T18:16:18Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:14:22Z",
+                    "queuedAt": "2023-06-01T18:14:23Z",
+                    "runningAt": "2023-06-01T18:14:30Z",
+                    "finishedAt": "2023-06-01T18:16:17Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "atlas"
+                    ]
+                },
+                {
+                    "id": "74055151-1ac7-470c-8d2a-5b02bf44b200",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/baile.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T18:08:33Z",
+                    "modifiedAt": "2023-06-01T18:10:44Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:08:34Z",
+                    "queuedAt": "2023-06-01T18:08:35Z",
+                    "runningAt": "2023-06-01T18:08:39Z",
+                    "finishedAt": "2023-06-01T18:10:43Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "dmq"
+                    ]
+                },
+                {
+                    "id": "ddd54812-a3ee-4c96-b34b-9c0188df0d7e",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "mitele-no-drm/0106_marinaynico_topvideos263.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T18:05:37Z",
+                    "modifiedAt": "2023-06-01T18:10:14Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:05:38Z",
+                    "queuedAt": "2023-06-01T18:05:38Z",
+                    "runningAt": "2023-06-01T18:05:42Z",
+                    "finishedAt": "2023-06-01T18:10:13Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "mitele",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "986d1892-8d51-4f1e-9c5c-5186eaa60320",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVID20230601_0034.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T18:01:24Z",
+                    "modifiedAt": "2023-06-01T18:02:59Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T18:01:25Z",
+                    "queuedAt": "2023-06-01T18:01:25Z",
+                    "runningAt": "2023-06-01T18:01:28Z",
+                    "finishedAt": "2023-06-01T18:02:58Z",
+                    "progress": 100,
+                    "labels": [
+                        "atlas",
+                        "bitmovin",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "37df6b23-768e-4ff7-abce-79e7e9a833f2",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/PJ.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T17:58:36Z",
+                    "modifiedAt": "2023-06-01T18:02:24Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:58:37Z",
+                    "queuedAt": "2023-06-01T17:58:37Z",
+                    "runningAt": "2023-06-01T17:58:48Z",
+                    "finishedAt": "2023-06-01T18:02:23Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "dmq",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "961df2ab-8426-4eab-b781-443446ae376e",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0074.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T17:58:26Z",
+                    "modifiedAt": "2023-06-01T18:04:58Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:58:27Z",
+                    "queuedAt": "2023-06-01T17:58:27Z",
+                    "runningAt": "2023-06-01T18:00:36Z",
+                    "finishedAt": "2023-06-01T18:04:58Z",
+                    "progress": 100,
+                    "labels": [
+                        "atlas",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "d4ad0aa3-fc0b-498a-b839-1fe72c400341",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVID20230601_0033.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T17:51:06Z",
+                    "modifiedAt": "2023-06-01T17:52:47Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:51:07Z",
+                    "queuedAt": "2023-06-01T17:51:07Z",
+                    "runningAt": "2023-06-01T17:51:09Z",
+                    "finishedAt": "2023-06-01T17:52:46Z",
+                    "progress": 100,
+                    "labels": [
+                        "atlas",
+                        "prewarmed",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "af4adc68-e15a-4ed6-877e-eab21296446d",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0073.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T17:50:58Z",
+                    "modifiedAt": "2023-06-01T17:56:25Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:50:59Z",
+                    "queuedAt": "2023-06-01T17:50:59Z",
+                    "runningAt": "2023-06-01T17:53:18Z",
+                    "finishedAt": "2023-06-01T17:56:25Z",
+                    "progress": 100,
+                    "labels": [
+                        "atlas",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "14ed58ba-6fad-4ffa-a291-415ee597ab95",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/JORDIALBA.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T17:48:18Z",
+                    "modifiedAt": "2023-06-01T17:55:36Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:48:19Z",
+                    "queuedAt": "2023-06-01T17:48:19Z",
+                    "runningAt": "2023-06-01T17:51:03Z",
+                    "finishedAt": "2023-06-01T17:55:36Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "dmq"
+                    ]
+                },
+                {
+                    "id": "b83e6351-9a16-4af5-9961-0e79af78e227",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVID20230601_0032.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T17:48:04Z",
+                    "modifiedAt": "2023-06-01T17:49:18Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:48:04Z",
+                    "queuedAt": "2023-06-01T17:48:04Z",
+                    "runningAt": "2023-06-01T17:48:08Z",
+                    "finishedAt": "2023-06-01T17:49:17Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "atlas"
+                    ]
+                },
+                {
+                    "id": "4ba5ea30-74fb-42f9-8b30-7c95ca584786",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0072.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T17:48:03Z",
+                    "modifiedAt": "2023-06-01T17:55:06Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:48:04Z",
+                    "queuedAt": "2023-06-01T17:48:04Z",
+                    "runningAt": "2023-06-01T17:50:18Z",
+                    "finishedAt": "2023-06-01T17:55:05Z",
+                    "progress": 100,
+                    "labels": [
+                        "atlas",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "0c980d72-d561-45ce-97f2-7034ec697369",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0071.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T17:40:30Z",
+                    "modifiedAt": "2023-06-01T17:45:31Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:40:30Z",
+                    "queuedAt": "2023-06-01T17:40:31Z",
+                    "runningAt": "2023-06-01T17:43:01Z",
+                    "finishedAt": "2023-06-01T17:45:31Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "atlas"
+                    ]
+                },
+                {
+                    "id": "4e064d20-5d93-456c-b737-6f42a0899262",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0070.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T17:37:23Z",
+                    "modifiedAt": "2023-06-01T17:40:05Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:37:24Z",
+                    "queuedAt": "2023-06-01T17:37:24Z",
+                    "runningAt": "2023-06-01T17:37:33Z",
+                    "finishedAt": "2023-06-01T17:40:05Z",
+                    "progress": 100,
+                    "labels": [
+                        "atlas",
+                        "prewarmed",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "2dfaa436-1092-449f-a2c6-0e57e6b22b64",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0069.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T17:37:09Z",
+                    "modifiedAt": "2023-06-01T17:38:55Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:37:10Z",
+                    "queuedAt": "2023-06-01T17:37:10Z",
+                    "runningAt": "2023-06-01T17:37:13Z",
+                    "finishedAt": "2023-06-01T17:38:55Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "atlas"
+                    ]
+                },
+                {
+                    "id": "24c0ef29-cab8-4167-a5ef-2df979fded01",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/patimakokeimputodelito.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T17:37:01Z",
+                    "modifiedAt": "2023-06-01T17:41:23Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:37:02Z",
+                    "queuedAt": "2023-06-01T17:37:02Z",
+                    "runningAt": "2023-06-01T17:37:03Z",
+                    "finishedAt": "2023-06-01T17:41:23Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "television"
+                    ]
+                },
+                {
+                    "id": "f8f2c40f-4ba2-4ca0-a693-e15140594708",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0068.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T17:36:17Z",
+                    "modifiedAt": "2023-06-01T17:43:00Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:36:18Z",
+                    "queuedAt": "2023-06-01T17:36:18Z",
+                    "runningAt": "2023-06-01T17:38:20Z",
+                    "finishedAt": "2023-06-01T17:42:59Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "atlas"
+                    ]
+                },
+                {
+                    "id": "752c8747-4ada-4e49-a94b-6991c5137a37",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/1cabezalduchamasturbarseCAD.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T17:31:52Z",
+                    "modifiedAt": "2023-06-01T17:35:45Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:31:53Z",
+                    "queuedAt": "2023-06-01T17:31:53Z",
+                    "runningAt": "2023-06-01T17:32:03Z",
+                    "finishedAt": "2023-06-01T17:35:44Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "television",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "34096654-5447-4362-8f25-e011eb0abf2f",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "mitele-no-drm/SálvameNaranja 01-06-2023.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T17:31:01Z",
+                    "modifiedAt": "2023-06-01T17:44:02Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:31:02Z",
+                    "queuedAt": "2023-06-01T17:31:02Z",
+                    "runningAt": "2023-06-01T17:33:17Z",
+                    "finishedAt": "2023-06-01T17:44:02Z",
+                    "progress": 100,
+                    "labels": [
+                        "mitele",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "7b9f3eb3-272b-404c-a75e-906fd9d2f88d",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/BENZO FUTURO OK.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T17:21:27Z",
+                    "modifiedAt": "2023-06-01T17:23:12Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:21:27Z",
+                    "queuedAt": "2023-06-01T17:21:28Z",
+                    "runningAt": "2023-06-01T17:21:32Z",
+                    "finishedAt": "2023-06-01T17:23:12Z",
+                    "progress": 100,
+                    "labels": [
+                        "dmq",
+                        "prewarmed",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "0a8abe9d-b950-499c-911a-a5373a90490a",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/cele sevi.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T17:16:19Z",
+                    "modifiedAt": "2023-06-01T17:19:15Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:16:20Z",
+                    "queuedAt": "2023-06-01T17:16:20Z",
+                    "runningAt": "2023-06-01T17:16:33Z",
+                    "finishedAt": "2023-06-01T17:19:14Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "dmq",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "f6d9662e-4192-4a52-893b-7683ca3c81e3",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/1guardiolaExtremaCADfeijoo.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T17:10:56Z",
+                    "modifiedAt": "2023-06-01T17:20:08Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:10:56Z",
+                    "queuedAt": "2023-06-01T17:10:57Z",
+                    "runningAt": "2023-06-01T17:13:24Z",
+                    "finishedAt": "2023-06-01T17:20:08Z",
+                    "progress": 100,
+                    "labels": [
+                        "television",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "cabaf749-1db4-4400-a8fa-e0093eb7020e",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/BENZEMA MARCA RAP.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T17:08:39Z",
+                    "modifiedAt": "2023-06-01T17:13:26Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:08:40Z",
+                    "queuedAt": "2023-06-01T17:08:40Z",
+                    "runningAt": "2023-06-01T17:08:58Z",
+                    "finishedAt": "2023-06-01T17:13:26Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "dmq"
+                    ]
+                },
+                {
+                    "id": "e3a49502-9f41-4685-bbd2-3a75f90f1fec",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0067.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T17:05:10Z",
+                    "modifiedAt": "2023-06-01T17:06:57Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:05:11Z",
+                    "queuedAt": "2023-06-01T17:05:11Z",
+                    "runningAt": "2023-06-01T17:05:17Z",
+                    "finishedAt": "2023-06-01T17:06:56Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "atlas"
+                    ]
+                },
+                {
+                    "id": "afbd0925-a98b-4e78-83c4-35b92de9b585",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "mitele-no-drm/0106_marinaynico_camaselasticas.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T17:02:43Z",
+                    "modifiedAt": "2023-06-01T17:23:51Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T17:02:43Z",
+                    "queuedAt": "2023-06-01T17:02:44Z",
+                    "runningAt": "2023-06-01T17:04:51Z",
+                    "finishedAt": "2023-06-01T17:23:51Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "mitele"
+                    ]
+                },
+                {
+                    "id": "5b62d85b-754f-4f53-8361-cdb49aa1ee69",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/astrazeneca.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T16:59:02Z",
+                    "modifiedAt": "2023-06-01T17:01:07Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:59:02Z",
+                    "queuedAt": "2023-06-01T16:59:03Z",
+                    "runningAt": "2023-06-01T16:59:06Z",
+                    "finishedAt": "2023-06-01T17:01:06Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "television"
+                    ]
+                },
+                {
+                    "id": "4d5ac5c5-8754-4ae6-8400-e6ea468c73db",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0066.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T16:57:23Z",
+                    "modifiedAt": "2023-06-01T16:59:18Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:57:24Z",
+                    "queuedAt": "2023-06-01T16:57:24Z",
+                    "runningAt": "2023-06-01T16:57:26Z",
+                    "finishedAt": "2023-06-01T16:59:17Z",
+                    "progress": 100,
+                    "labels": [
+                        "atlas",
+                        "prewarmed",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "76ca2bdb-783d-4e54-8ff7-e055787a9d08",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/elporquedelasenigmaticaspalabrasdeanabel.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T16:55:18Z",
+                    "modifiedAt": "2023-06-01T16:58:03Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:55:19Z",
+                    "queuedAt": "2023-06-01T16:55:20Z",
+                    "runningAt": "2023-06-01T16:55:26Z",
+                    "finishedAt": "2023-06-01T16:58:02Z",
+                    "progress": 100,
+                    "labels": [
+                        "television",
+                        "prewarmed",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "1b51933f-d17a-4118-9061-cd9766053cf1",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVID20230601_0031.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T16:53:18Z",
+                    "modifiedAt": "2023-06-01T16:54:48Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:53:19Z",
+                    "queuedAt": "2023-06-01T16:53:19Z",
+                    "runningAt": "2023-06-01T16:53:30Z",
+                    "finishedAt": "2023-06-01T16:54:47Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "prewarmed",
+                        "atlas"
+                    ]
+                },
+                {
+                    "id": "71a18612-3802-453a-aeab-f83f6fcdec64",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVID20230601_0030.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T16:50:01Z",
+                    "modifiedAt": "2023-06-01T16:51:32Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:50:02Z",
+                    "queuedAt": "2023-06-01T16:50:02Z",
+                    "runningAt": "2023-06-01T16:50:12Z",
+                    "finishedAt": "2023-06-01T16:51:31Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "atlas",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "7c57cdd2-0a7d-4c07-9ea6-c8f7001c2fa0",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "nius/Voto_por_correo_3.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T16:44:46Z",
+                    "modifiedAt": "2023-06-01T16:49:23Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:44:47Z",
+                    "queuedAt": "2023-06-01T16:44:47Z",
+                    "runningAt": "2023-06-01T16:44:49Z",
+                    "finishedAt": "2023-06-01T16:49:22Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "nius"
+                    ]
+                },
+                {
+                    "id": "d3476ca6-6087-48dc-8054-ab5b439f8d9c",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/010623badajoz.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T16:43:55Z",
+                    "modifiedAt": "2023-06-01T16:45:37Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:43:55Z",
+                    "queuedAt": "2023-06-01T16:43:56Z",
+                    "runningAt": "2023-06-01T16:43:59Z",
+                    "finishedAt": "2023-06-01T16:45:36Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "bitmovin",
+                        "television"
+                    ]
+                },
+                {
+                    "id": "f4b96ca1-14ec-4e5c-bd8f-301a68a0cfb8",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVID20230601_0029.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T16:41:32Z",
+                    "modifiedAt": "2023-06-01T16:42:41Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:41:33Z",
+                    "queuedAt": "2023-06-01T16:41:34Z",
+                    "runningAt": "2023-06-01T16:41:39Z",
+                    "finishedAt": "2023-06-01T16:42:40Z",
+                    "progress": 100,
+                    "labels": [
+                        "atlas",
+                        "prewarmed",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "7c4ff275-546a-4491-a1d7-0bcced181b51",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "television/1SusanaDiazCADpedroSanchez.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T16:40:19Z",
+                    "modifiedAt": "2023-06-01T16:45:04Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:40:19Z",
+                    "queuedAt": "2023-06-01T16:40:19Z",
+                    "runningAt": "2023-06-01T16:40:30Z",
+                    "finishedAt": "2023-06-01T16:45:03Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "television"
+                    ]
+                },
+                {
+                    "id": "95b118a9-9068-4542-8364-79518d832aeb",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "mitele-no-drm/HD_MICASAESLATUYA-118 FERNANDO VERDASCO-Unido.[1].mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T16:34:40Z",
+                    "modifiedAt": "2023-06-01T16:55:26Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:34:41Z",
+                    "queuedAt": "2023-06-01T16:34:41Z",
+                    "runningAt": "2023-06-01T16:36:47Z",
+                    "finishedAt": "2023-06-01T16:55:26Z",
+                    "progress": 100,
+                    "labels": [
+                        "mitele",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "0c5333a1-7cbf-4dbf-b16e-d4179dbe44fd",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0065.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T16:32:42Z",
+                    "modifiedAt": "2023-06-01T16:39:08Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:32:42Z",
+                    "queuedAt": "2023-06-01T16:32:43Z",
+                    "runningAt": "2023-06-01T16:34:46Z",
+                    "finishedAt": "2023-06-01T16:39:07Z",
+                    "progress": 100,
+                    "labels": [
+                        "atlas",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "cdf424cd-9861-425a-b690-035d1647eec4",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "mitele-no-drm/TEM 01-06-2023.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T16:31:56Z",
+                    "modifiedAt": "2023-06-01T16:46:18Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:31:57Z",
+                    "queuedAt": "2023-06-01T16:31:57Z",
+                    "runningAt": "2023-06-01T16:34:25Z",
+                    "finishedAt": "2023-06-01T16:46:17Z",
+                    "progress": 100,
+                    "labels": [
+                        "bitmovin",
+                        "mitele"
+                    ]
+                },
+                {
+                    "id": "b3161f99-732c-404d-a9fb-5256ce77e9b2",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/WhatsApp Video 2023-06-01 at 18.10.41.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T16:30:36Z",
+                    "modifiedAt": "2023-06-01T16:34:47Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:30:37Z",
+                    "queuedAt": "2023-06-01T16:30:37Z",
+                    "runningAt": "2023-06-01T16:32:59Z",
+                    "finishedAt": "2023-06-01T16:34:46Z",
+                    "progress": 100,
+                    "labels": [
+                        "dmq",
+                        "bitmovin",
+                        "prewarmed"
+                    ]
+                },
+                {
+                    "id": "a2f1c4f7-5bd1-47e4-9ccc-215c3cbe69cb",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "dmq/bajada.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T16:29:44Z",
+                    "modifiedAt": "2023-06-01T16:32:08Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:29:45Z",
+                    "queuedAt": "2023-06-01T16:29:45Z",
+                    "runningAt": "2023-06-01T16:29:47Z",
+                    "finishedAt": "2023-06-01T16:32:07Z",
+                    "progress": 100,
+                    "labels": [
+                        "dmq",
+                        "prewarmed",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "0e725567-c109-426f-a4e5-fbca6bbf62b6",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "atlas/ATLVTV20230601_0064.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "STABLE",
+                    "selectedEncoderVersion": "2.165.0",
+                    "createdAt": "2023-06-01T16:23:38Z",
+                    "modifiedAt": "2023-06-01T16:29:25Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:23:39Z",
+                    "queuedAt": "2023-06-01T16:23:39Z",
+                    "runningAt": "2023-06-01T16:25:43Z",
+                    "finishedAt": "2023-06-01T16:29:24Z",
+                    "progress": 100,
+                    "labels": [
+                        "atlas",
+                        "bitmovin"
+                    ]
+                },
+                {
+                    "id": "790b76bc-7614-43b5-b1af-4bb0d2186943",
+                    "infrastructure": {
+                        "infrastructureId": "8444cbf5-ab48-4ff1-ad03-7e9c42b02c11",
+                        "cloudRegion": "AZURE_EUROPE_WEST"
+                    },
+                    "name": "nius/emeritosjordania.mp4",
+                    "description": "Per-Title Encoding",
+                    "encoderVersion": "2.149.0",
+                    "selectedEncoderVersion": "2.149.0",
+                    "createdAt": "2023-06-01T16:23:02Z",
+                    "modifiedAt": "2023-06-01T16:25:29Z",
+                    "cloudRegion": "EXTERNAL",
+                    "selectedCloudRegion": "EXTERNAL",
+                    "type": "VOD",
+                    "status": "FINISHED",
+                    "startedAt": "2023-06-01T16:23:03Z",
+                    "queuedAt": "2023-06-01T16:23:03Z",
+                    "runningAt": "2023-06-01T16:23:05Z",
+                    "finishedAt": "2023-06-01T16:25:28Z",
+                    "progress": 100,
+                    "labels": [
+                        "prewarmed",
+                        "nius",
+                        "bitmovin"
+                    ]
+                }
+            ]
+        }
+    }
+}
