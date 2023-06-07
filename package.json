@@ -2,10 +2,11 @@
   "name": "prewarned-improvement",
   "version": "0.0.1",
   "description": "Prewarned Improvement OM - MediaSet",
-  "main": "index.js",
+  "main": "build/index.js",
   "license": "MIT",
   "scripts": {
     "start": "nodemon --watch \"*.ts\" --exec \"ts-node\" ./src/index.ts",
+    "build": "tsc",
     "eslint:fix": "eslint --fix"
   },
   "devDependencies": {
