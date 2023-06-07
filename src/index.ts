@@ -1,4 +1,4 @@
-import { ImprovementRow } from "./models/ImprovementRow"
+import { ImprovementRow, ComputedDifferences } from "./models"
 import * as path from 'path'
 import * as fs from 'fs'
 import * as csvWriter from 'csv-writer'
@@ -40,7 +40,7 @@ function main() {
 
   const jsonsInDir = fs.readdirSync('./jsons').filter(file => path.extname(file) === '.json')
 
-  let differenceSums = {
+  let differenceSums: ComputedDifferences = {
     createQueueDiff: 0,
     createFinishedDiff: 0,
     totalRecords: 0
@@ -53,7 +53,7 @@ function main() {
     const filteredItems = items.filter(includePrewarned)
 
     const mappedRows = filteredItems.map(getImprovementRow)
-    differenceSums = mappedRows.reduce((acc, item: ImprovementRow) => {
+    differenceSums = mappedRows.reduce((acc: ComputedDifferences, item: ImprovementRow) => {
       return {
         createQueueDiff: acc.createQueueDiff + item.createQueuedDiffSeconds,
         createFinishedDiff: acc.createFinishedDiff + item.createFinishedDiffSeconds,
