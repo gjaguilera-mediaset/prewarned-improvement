@@ -11,7 +11,7 @@ function includePrewarned(item) {
 }
 
 function notIncludePrewarned(item) {
-  const previousToPrewarnedTags = ['atlas', 'nius']
+  const previousToPrewarnedTags = ['atlas', 'television', 'nius', 'deportes']
   return !item.labels.includes('prewarmed') && item.labels.some(label => previousToPrewarnedTags.includes(label))
 }
 
