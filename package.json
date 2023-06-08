@@ -25,9 +25,11 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
+    "@bitmovin/api-sdk": "^1.164.0",
     "@prisma/client": "4.15.0",
     "csv-writer": "^1.6.0",
     "date-fns": "^2.30.0",
+    "dotenv": "^16.1.4",
     "lodash": "^4.17.21",
     "winston": "^3.9.0"
   }

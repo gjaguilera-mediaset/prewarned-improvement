@@ -1,3 +1,4 @@
+import "dotenv/config"
 import { ImprovementRow, ComputedDifferences, ComputedDifferencesWithAverage } from "./models"
 import * as path from 'path'
 import * as fs from 'fs'
@@ -5,6 +6,8 @@ import * as csvWriter from 'csv-writer'
 import { differenceInSeconds } from 'date-fns'
 import logger from './logger'
 import { PrewarmedError } from "./PrewarmedError"
+import bitmovinApi from "./bitmovin"
+import flatten from 'lodash/flatten'
 
 type JsonsFolders = 'prewarmed' | 'pre-prewarmed'
 
@@ -126,6 +129,38 @@ async function main() {
     logger.info({ message: 'Files generated successfully', label: 'all' })
   } catch(error: any) {
     logger.error({ message: error.message, label: error.label})
+  }
+
+  // TEST 
+  try {
+    const result = await bitmovinApi.encoding.encodings.list({ 
+      status: "FINISHED",
+      limit: 100,
+      offset: 0,
+      createdAtNewerThan: new Date('2023-05-01T23:00:00.000Z'),
+      createdAtOlderThan: new Date('2023-06-01T22:59:59.999Z'),
+     })
+
+     const amountOfPages = (result.totalCount || 0) / 100
+     const realAmountOfPages: number = Math.ceil(amountOfPages)
+
+     const requests = Array.from({ length: realAmountOfPages }).map((_, index) => {
+      return bitmovinApi.encoding.encodings.list({
+        status: "FINISHED",
+        limit: 100,
+        offset: 100 * index,
+        createdAtNewerThan: new Date('2023-05-01T23:00:00.000Z'),
+        createdAtOlderThan: new Date('2023-06-01T22:59:59.999Z'),
+      })
+     })
+
+     const requestsResponse = await Promise.all([...requests])
+     const requestsResponseMapped = requestsResponse.map(response => response.items)
+     const items = flatten(requestsResponseMapped)
+
+     console.log(items)
+  } catch(error: any) {
+    logger.error({ message: error.message, label: 'bitmovin'})
   }
 }
 
