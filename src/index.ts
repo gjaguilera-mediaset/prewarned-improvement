@@ -1,4 +1,4 @@
-import { ImprovementRow, ComputedDifferences } from "./models"
+import { ImprovementRow, ComputedDifferences, ComputedDifferencesWithAverage } from "./models"
 import * as path from 'path'
 import * as fs from 'fs'
 import * as csvWriter from 'csv-writer'
@@ -39,23 +39,23 @@ async function generateOutput(outputFile: string, jsonsFolder: JsonsFolders, fil
     path: path.resolve(outputFile),
     header: [
       { id: 'id', title: 'ID' },
-      { id: 'startedAt', title: 'StartedAt' },
-      { id: 'queuedAt', title: 'QueuedAt' },
-      { id: 'finishedAt', title: 'FinishedAt' },
-      { id: 'createQueuedDiffSeconds', title: 'CreateQueuedDiffSeconds' },
-      { id: 'createFinishedDiffSeconds', title: 'createFinishedDiffSeconds' },
+      { id: 'startedAt', title: 'Started At' },
+      { id: 'queuedAt', title: 'Queued At' },
+      { id: 'finishedAt', title: 'Finished At' },
+      { id: 'createQueuedDiffSeconds', title: 'Create Queued Diff Seconds' },
+      { id: 'createFinishedDiffSeconds', title: 'Create Finished Diff Seconds' },
     ]
   })
 
   let differenceSums: ComputedDifferences = {
     createQueueDiff: 0,
     createFinishedDiff: 0,
-    totalRecords: 0
+    totalRecords: 0,
+    title: jsonsFolder,
   }
 
-  for (const file in jsonsInDir) {
-    const fileName = jsonsInDir[file]
-    const fileData = fs.readFileSync(path.join(jsonsFolder, fileName))
+  for (const file of jsonsInDir) {
+    const fileData = fs.readFileSync(path.join(jsonsFolder, file))
     const jsonData = JSON.parse(fileData.toString())
     const items = jsonData.data.result.items
     const filteredItems = items.filter(filterFunction)
@@ -63,6 +63,7 @@ async function generateOutput(outputFile: string, jsonsFolder: JsonsFolders, fil
     const mappedRows = filteredItems.map(getImprovementRow)
     differenceSums = mappedRows.reduce((acc: ComputedDifferences, item: ImprovementRow) => {
       return {
+        ...differenceSums,
         createQueueDiff: acc.createQueueDiff + item.createQueuedDiffSeconds,
         createFinishedDiff: acc.createFinishedDiff + item.createFinishedDiffSeconds,
         totalRecords: acc.totalRecords + 1,
@@ -75,12 +76,38 @@ async function generateOutput(outputFile: string, jsonsFolder: JsonsFolders, fil
   return differenceSums
 }
 
+async function generateDifferenceOutputFile(results: ComputedDifferences[], outputFile?: string) {
+  const writer = csvWriter.createObjectCsvWriter({
+    path: path.resolve(outputFile || 'result.csv'),
+    header: [
+      { id: 'title', title: 'Title' },
+      { id: 'createQueueDiff', title: 'Total Create Queue Diff (All records Queue - Start)' },
+      { id: 'createFinishedDiff', title: 'Total Create Finished Diff (All records Finished - Start)' },
+      { id: 'totalRecords', title: 'Total Records' },
+      { id: 'createQueueDiffAvg', title: 'Create Queue Diff Avg' },
+      { id: 'createFinishedDiffAvg', title: 'create Finished Diff Avg' },
+    ]
+  })
+
+  const resultsMapped: ComputedDifferencesWithAverage[] = results.map(result => {
+    return {
+      ...result,
+      createQueueDiffAvg: result.totalRecords !== 0 ? result.createQueueDiff / result.totalRecords : 0,
+      createFinishedDiffAvg: result.totalRecords !== 0 ? result.createFinishedDiff / result.totalRecords : 0,
+    }
+  })
+
+  await writer.writeRecords(resultsMapped)
+}
+
 async function main() {
   try {
     const prewarmedResult = await generateOutput('prewarmed.csv', 'prewarmed', includePrewarned)
     const prePrewarmedResult = await generateOutput('pre-prewarmed.csv', 'pre-prewarmed', notIncludePrewarned)
+    await generateDifferenceOutputFile([prewarmedResult, prePrewarmedResult], 'differences.csv')
+    console.info("Files generated successfully!")
   } catch(error) {
-    console.error("An error occurred while generating file", error)
+    console.error("An error occurred while generating files", error)
   }
 }
 
