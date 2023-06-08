@@ -3,6 +3,8 @@ import * as path from 'path'
 import * as fs from 'fs'
 import * as csvWriter from 'csv-writer'
 import { differenceInSeconds } from 'date-fns'
+import logger from './logger'
+import { PrewarmedError } from "./PrewarmedError"
 
 type JsonsFolders = 'prewarmed' | 'pre-prewarmed'
 
@@ -33,6 +35,11 @@ function getImprovementRow(item): ImprovementRow {
 }
 
 async function generateOutput(outputFile: string, jsonsFolder: JsonsFolders, filterFunction): Promise<ComputedDifferences> {
+  logger.info({ message: `Reading json files from ${jsonsFolder}`, label: jsonsFolder })
+  
+  if (!fs.existsSync(jsonsFolder)) {
+    throw new PrewarmedError(jsonsFolder, `${jsonsFolder} directory does not exist.`)
+  }
   const jsonsInDir = fs.readdirSync(jsonsFolder).filter(file => path.extname(file) === '.json')
 
   const writer = csvWriter.createObjectCsvWriter({
@@ -55,6 +62,7 @@ async function generateOutput(outputFile: string, jsonsFolder: JsonsFolders, fil
   }
 
   for (const file of jsonsInDir) {
+    logger.info({ message: `Reading json content from ${jsonsFolder}/${file}`, label: jsonsFolder })
     const fileData = fs.readFileSync(path.join(jsonsFolder, file))
     const jsonData = JSON.parse(fileData.toString())
     const items = jsonData.data.result.items
@@ -70,7 +78,12 @@ async function generateOutput(outputFile: string, jsonsFolder: JsonsFolders, fil
       }
     }, differenceSums)
 
-    await writer.writeRecords(mappedRows)
+    try {
+      logger.info({ message: `Writing json content from ${jsonsFolder}/${file} to ${outputFile}`, label: jsonsFolder })
+      await writer.writeRecords(mappedRows)
+    } catch(error: any) {
+      throw new PrewarmedError(jsonsFolder, error.message)
+    }
   }
 
   return differenceSums
@@ -105,9 +118,9 @@ async function main() {
     const prewarmedResult = await generateOutput('prewarmed.csv', 'prewarmed', includePrewarned)
     const prePrewarmedResult = await generateOutput('pre-prewarmed.csv', 'pre-prewarmed', notIncludePrewarned)
     await generateDifferenceOutputFile([prewarmedResult, prePrewarmedResult], 'differences.csv')
-    console.info("Files generated successfully!")
-  } catch(error) {
-    console.error("An error occurred while generating files", error)
+    logger.info({ message: 'Files generated successfully', label: 'all' })
+  } catch(error: any) {
+    logger.error({ message: error.message, label: error.label})
   }
 }
 
