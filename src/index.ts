@@ -4,8 +4,15 @@ import * as fs from 'fs'
 import * as csvWriter from 'csv-writer'
 import { differenceInSeconds } from 'date-fns'
 
+type JsonsFolders = 'prewarmed' | 'nonPrewarned'
+
 function includePrewarned(item) {
   return item.labels.includes('prewarmed')
+}
+
+function notIncludePrewarned(item) {
+  const previousToPrewarnedTags = ['atlas', 'nius']
+  return !item.labels.includes('prewarmed') && item.labels.some(label => previousToPrewarnedTags.includes(label))
 }
 
 function getImprovementRow(item): ImprovementRow {
@@ -25,9 +32,11 @@ function getImprovementRow(item): ImprovementRow {
   }
 }
 
-function main() {
+async function generateOutput(outputFile: string, jsonsFolder: JsonsFolders, filterFunction): Promise<ComputedDifferences> {
+  const jsonsInDir = fs.readdirSync(jsonsFolder).filter(file => path.extname(file) === '.json')
+
   const writer = csvWriter.createObjectCsvWriter({
-    path: path.resolve('result.csv'),
+    path: path.resolve(outputFile),
     header: [
       { id: 'id', title: 'ID' },
       { id: 'startedAt', title: 'StartedAt' },
@@ -38,19 +47,18 @@ function main() {
     ]
   })
 
-  const jsonsInDir = fs.readdirSync('./jsons').filter(file => path.extname(file) === '.json')
-
   let differenceSums: ComputedDifferences = {
     createQueueDiff: 0,
     createFinishedDiff: 0,
     totalRecords: 0
   }
 
-  jsonsInDir.forEach(file => {
-    const fileData = fs.readFileSync(path.join('./jsons', file))
+  for (const file in jsonsInDir) {
+    const fileName = jsonsInDir[file]
+    const fileData = fs.readFileSync(path.join(jsonsFolder, fileName))
     const jsonData = JSON.parse(fileData.toString())
     const items = jsonData.data.result.items
-    const filteredItems = items.filter(includePrewarned)
+    const filteredItems = items.filter(filterFunction)
 
     const mappedRows = filteredItems.map(getImprovementRow)
     differenceSums = mappedRows.reduce((acc: ComputedDifferences, item: ImprovementRow) => {
@@ -61,10 +69,19 @@ function main() {
       }
     }, differenceSums)
 
-    writer.writeRecords(mappedRows).then(() => console.info('File written successfully!'))
+    await writer.writeRecords(mappedRows)
+  }
 
-    console.info("Results", differenceSums)
-  })
+  return differenceSums
 }
 
-main()
+async function main() {
+  try {
+    const result = await generateOutput('result.csv', 'prewarmed', includePrewarned)
+    console.log("Result", result)
+  } catch(error) {
+    console.error("An error occurred while writing records to file", error)
+  }
+}
+
+main().then()
