@@ -4,7 +4,7 @@ import * as fs from 'fs'
 import * as csvWriter from 'csv-writer'
 import { differenceInSeconds } from 'date-fns'
 
-type JsonsFolders = 'prewarmed' | 'nonPrewarned'
+type JsonsFolders = 'prewarmed' | 'pre-prewarmed'
 
 function includePrewarned(item) {
   return item.labels.includes('prewarmed')
@@ -77,10 +77,10 @@ async function generateOutput(outputFile: string, jsonsFolder: JsonsFolders, fil
 
 async function main() {
   try {
-    const result = await generateOutput('result.csv', 'prewarmed', includePrewarned)
-    console.log("Result", result)
+    const prewarmedResult = await generateOutput('prewarmed.csv', 'prewarmed', includePrewarned)
+    const prePrewarmedResult = await generateOutput('pre-prewarmed.csv', 'pre-prewarmed', notIncludePrewarned)
   } catch(error) {
-    console.error("An error occurred while writing records to file", error)
+    console.error("An error occurred while generating file", error)
   }
 }
 
