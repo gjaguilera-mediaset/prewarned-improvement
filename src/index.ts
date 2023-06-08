@@ -110,7 +110,12 @@ async function generateDifferenceOutputFile(results: ComputedDifferences[], outp
     }
   })
 
-  await writer.writeRecords(resultsMapped)
+  try {
+    logger.info({ message: `Writing differences to ${outputFile}`, label: 'all'})
+    await writer.writeRecords(resultsMapped)
+  } catch(error: any) {
+    throw new PrewarmedError('all', error.message)
+  }
 }
 
 async function main() {
