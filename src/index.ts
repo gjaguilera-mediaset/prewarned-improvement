@@ -1,15 +1,13 @@
 import "dotenv/config"
 import { ImprovementRow, ComputedDifferences, ComputedDifferencesWithAverage } from "./models"
 import * as path from 'path'
-import * as fs from 'fs'
 import * as csvWriter from 'csv-writer'
-import { differenceInSeconds } from 'date-fns'
+import { differenceInSeconds, format } from 'date-fns'
 import logger from './logger'
 import { PrewarmedError } from "./PrewarmedError"
 import bitmovinApi from "./bitmovin"
 import flatten from 'lodash/flatten'
-
-type JsonsFolders = 'prewarmed' | 'pre-prewarmed'
+import { Encoding } from "@bitmovin/api-sdk"
 
 function includePrewarned(item) {
   return item.labels.includes('prewarmed')
@@ -37,14 +35,10 @@ function getImprovementRow(item): ImprovementRow {
   }
 }
 
-async function generateOutput(outputFile: string, jsonsFolder: JsonsFolders, filterFunction): Promise<ComputedDifferences> {
-  logger.info({ message: `Reading json files from ${jsonsFolder}`, label: jsonsFolder })
-  
-  if (!fs.existsSync(jsonsFolder)) {
-    throw new PrewarmedError(jsonsFolder, `${jsonsFolder} directory does not exist.`)
-  }
-  const jsonsInDir = fs.readdirSync(jsonsFolder).filter(file => path.extname(file) === '.json')
+async function generateOutput(outputFile: string, items: Encoding[], filterFunction): Promise<ComputedDifferences> {
+  const filename = path.parse(outputFile).name
 
+  logger.info({ message: `Initializing writer to write content to ${outputFile}`, label: filename })
   const writer = csvWriter.createObjectCsvWriter({
     path: path.resolve(outputFile),
     header: [
@@ -61,47 +55,42 @@ async function generateOutput(outputFile: string, jsonsFolder: JsonsFolders, fil
     createQueueDiff: 0,
     createFinishedDiff: 0,
     totalRecords: 0,
-    title: jsonsFolder,
+    title: filename,
   }
 
-  for (const file of jsonsInDir) {
-    logger.info({ message: `Reading json content from ${jsonsFolder}/${file}`, label: jsonsFolder })
-    const fileData = fs.readFileSync(path.join(jsonsFolder, file))
-    const jsonData = JSON.parse(fileData.toString())
-    const items = jsonData.data.result.items
-    const filteredItems = items.filter(filterFunction)
+  const filteredItems = items.filter(filterFunction)
 
-    const mappedRows = filteredItems.map(getImprovementRow)
-    differenceSums = mappedRows.reduce((acc: ComputedDifferences, item: ImprovementRow) => {
-      return {
-        ...differenceSums,
-        createQueueDiff: acc.createQueueDiff + item.createQueuedDiffSeconds,
-        createFinishedDiff: acc.createFinishedDiff + item.createFinishedDiffSeconds,
-        totalRecords: acc.totalRecords + 1,
-      }
-    }, differenceSums)
-
-    try {
-      logger.info({ message: `Writing json content from ${jsonsFolder}/${file} to ${outputFile}`, label: jsonsFolder })
-      await writer.writeRecords(mappedRows)
-    } catch(error: any) {
-      throw new PrewarmedError(jsonsFolder, error.message)
+  const mappedRows = filteredItems.map(getImprovementRow)
+  differenceSums = mappedRows.reduce((acc: ComputedDifferences, item: ImprovementRow) => {
+    return {
+      ...differenceSums,
+      createQueueDiff: acc.createQueueDiff + item.createQueuedDiffSeconds,
+      createFinishedDiff: acc.createFinishedDiff + item.createFinishedDiffSeconds,
+      totalRecords: acc.totalRecords + 1,
     }
+  }, differenceSums)
+
+  try {
+    logger.info({ message: `Writing content to ${outputFile}`, label: filename })
+    await writer.writeRecords(mappedRows)
+  } catch(error: any) {
+    throw new PrewarmedError(filename, error.message)
   }
 
   return differenceSums
 }
 
 async function generateDifferenceOutputFile(results: ComputedDifferences[], outputFile?: string) {
+  logger.info({ message: `Initializing writer to write content to ${outputFile}`, label: 'local'})
   const writer = csvWriter.createObjectCsvWriter({
     path: path.resolve(outputFile || 'result.csv'),
     header: [
       { id: 'title', title: 'Title' },
-      { id: 'createQueueDiff', title: 'Total Create Queue Diff (All records Queue - Start)' },
-      { id: 'createFinishedDiff', title: 'Total Create Finished Diff (All records Finished - Start)' },
+      { id: 'createQueueDiff', title: 'Total Create Queue Diff (All records Queue - Start) - Seconds' },
+      { id: 'createFinishedDiff', title: 'Total Create Finished Diff (All records Finished - Start) - Seconds' },
       { id: 'totalRecords', title: 'Total Records' },
-      { id: 'createQueueDiffAvg', title: 'Create Queue Diff Avg' },
-      { id: 'createFinishedDiffAvg', title: 'create Finished Diff Avg' },
+      { id: 'createQueueDiffAvg', title: 'Create Queue Diff Avg (Seconds)' },
+      { id: 'createFinishedDiffAvg', title: 'create Finished Diff Avg (Seconds)' },
     ]
   })
 
@@ -114,31 +103,26 @@ async function generateDifferenceOutputFile(results: ComputedDifferences[], outp
   })
 
   try {
-    logger.info({ message: `Writing differences to ${outputFile}`, label: 'all'})
+    logger.info({ message: `Writing differences to ${outputFile}`, label: 'local'})
     await writer.writeRecords(resultsMapped)
   } catch(error: any) {
-    throw new PrewarmedError('all', error.message)
+    throw new PrewarmedError('local', error.message)
   }
 }
 
-async function main() {
+async function fetchEncodingsFromGivenRange(createdAtNewerThan: Date, createdAtOlderThan: Date): Promise<Array<Encoding>> {
   try {
-    const prewarmedResult = await generateOutput('prewarmed.csv', 'prewarmed', includePrewarned)
-    const prePrewarmedResult = await generateOutput('pre-prewarmed.csv', 'pre-prewarmed', notIncludePrewarned)
-    await generateDifferenceOutputFile([prewarmedResult, prePrewarmedResult], 'differences.csv')
-    logger.info({ message: 'Files generated successfully', label: 'all' })
-  } catch(error: any) {
-    logger.error({ message: error.message, label: error.label})
-  }
-
-  // TEST 
-  try {
+    const dateFormat = 'yyyy-MM-dd'
+    logger.info({ 
+      message: `Fetching total amount of records from ${format(createdAtNewerThan, dateFormat)} to ${format(createdAtOlderThan, dateFormat)}`, 
+      label: 'bitmovin' 
+    })
     const result = await bitmovinApi.encoding.encodings.list({ 
       status: "FINISHED",
       limit: 100,
       offset: 0,
-      createdAtNewerThan: new Date('2023-05-01T23:00:00.000Z'),
-      createdAtOlderThan: new Date('2023-06-01T22:59:59.999Z'),
+      createdAtNewerThan,
+      createdAtOlderThan,
      })
 
      const amountOfPages = (result.totalCount || 0) / 100
@@ -154,13 +138,40 @@ async function main() {
       })
      })
 
+    logger.info({ 
+      message: `Initializing requests to fetch ${result.totalCount} records`,
+      label: 'bitmovin' 
+    })
      const requestsResponse = await Promise.all([...requests])
      const requestsResponseMapped = requestsResponse.map(response => response.items)
-     const items = flatten(requestsResponseMapped)
+     const items: Encoding[] = flatten(requestsResponseMapped)
 
-     console.log(items)
+     return items
   } catch(error: any) {
-    logger.error({ message: error.message, label: 'bitmovin'})
+    throw new PrewarmedError('bitmovin', error.message)
+  }
+}
+
+async function main() {
+  try {
+    const prewarmedApiResponse = await fetchEncodingsFromGivenRange(
+      new Date('2023-05-01T23:00:00.000Z'), 
+      new Date('2023-06-01T22:59:59.999Z')
+    )
+
+    const prePrewarmedApiResponse = await fetchEncodingsFromGivenRange(
+      new Date('2023-02-01T23:00:00.000Z'), 
+      new Date('2023-03-01T22:59:59.999Z')
+    )
+
+    const prewarmedResult = await generateOutput('prewarmed.csv', prewarmedApiResponse, includePrewarned)
+    const prePrewarmedResult = await generateOutput('pre-prewarmed.csv', prePrewarmedApiResponse, notIncludePrewarned)
+
+    await generateDifferenceOutputFile([prewarmedResult, prePrewarmedResult], 'differences.csv')
+
+    logger.info({ message: 'Files generated successfully', label: 'local' })
+  } catch(error: any) {
+    logger.error({ message: error.message, label: error.label})
   }
 }
 

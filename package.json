@@ -1,6 +1,6 @@
 {
   "name": "prewarned-improvement",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Prewarned Improvement OM - MediaSet",
   "main": "build/index.js",
   "license": "MIT",
