@@ -1,8 +1,8 @@
 export type ImprovementRow = {
     id: string
     startedAt: string
-    queuedAt: string
+    runningAt: string
     finishedAt: string
-    createQueuedDiffSeconds: number
+    createRunningDiffSeconds: number
     createFinishedDiffSeconds: number
 }

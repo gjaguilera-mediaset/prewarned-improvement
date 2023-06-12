@@ -19,19 +19,19 @@ function notIncludePrewarned(item) {
 }
 
 function getImprovementRow(item): ImprovementRow {
-  const { id, startedAt, queuedAt, finishedAt } = item
+  const { id, startedAt, runningAt, finishedAt } = item
 
   const startDate = new Date(startedAt)
-  const queuedDate = new Date(queuedAt)
+  const runningDate = new Date(runningAt)
   const finishedDate = new Date(finishedAt)
 
   return {
     id,
     startedAt,
-    queuedAt,
+    runningAt,
     finishedAt,
     createFinishedDiffSeconds: differenceInSeconds(finishedDate, startDate),
-    createQueuedDiffSeconds: differenceInSeconds(queuedDate, startDate),
+    createRunningDiffSeconds: differenceInSeconds(runningDate, startDate),
   }
 }
 
@@ -44,15 +44,15 @@ async function generateOutput(outputFile: string, items: Encoding[], filterFunct
     header: [
       { id: 'id', title: 'ID' },
       { id: 'startedAt', title: 'Started At' },
-      { id: 'queuedAt', title: 'Queued At' },
+      { id: 'runningAt', title: 'Running At' },
       { id: 'finishedAt', title: 'Finished At' },
-      { id: 'createQueuedDiffSeconds', title: 'Create Queued Diff Seconds' },
+      { id: 'createRunningDiffSeconds', title: 'Create Running Diff Seconds' },
       { id: 'createFinishedDiffSeconds', title: 'Create Finished Diff Seconds' },
     ]
   })
 
   let differenceSums: ComputedDifferences = {
-    createQueueDiff: 0,
+    createRunningDiff: 0,
     createFinishedDiff: 0,
     totalRecords: 0,
     title: filename,
@@ -64,7 +64,7 @@ async function generateOutput(outputFile: string, items: Encoding[], filterFunct
   differenceSums = mappedRows.reduce((acc: ComputedDifferences, item: ImprovementRow) => {
     return {
       ...differenceSums,
-      createQueueDiff: acc.createQueueDiff + item.createQueuedDiffSeconds,
+      createRunningDiff: acc.createRunningDiff + item.createRunningDiffSeconds,
       createFinishedDiff: acc.createFinishedDiff + item.createFinishedDiffSeconds,
       totalRecords: acc.totalRecords + 1,
     }
@@ -86,18 +86,18 @@ async function generateDifferenceOutputFile(results: ComputedDifferences[], outp
     path: path.resolve(outputFile || 'result.csv'),
     header: [
       { id: 'title', title: 'Title' },
-      { id: 'createQueueDiff', title: 'Total Create Queue Diff (All records Queue - Start) - Seconds' },
+      { id: 'createRunningDiff', title: 'Total Create Running Diff (All records Running - Start) - Seconds' },
       { id: 'createFinishedDiff', title: 'Total Create Finished Diff (All records Finished - Start) - Seconds' },
       { id: 'totalRecords', title: 'Total Records' },
-      { id: 'createQueueDiffAvg', title: 'Create Queue Diff Avg (Seconds)' },
+      { id: 'createRunningDiffAvg', title: 'Create Running Diff Avg (Seconds)' },
       { id: 'createFinishedDiffAvg', title: 'create Finished Diff Avg (Seconds)' },
     ]
   })
 
-  const resultsMapped: ComputedDifferencesWithAverage[] = results.map(result => {
+  const resultsMapped: ComputedDifferencesWithAverage[] = results.map((result: ComputedDifferences) => {
     return {
       ...result,
-      createQueueDiffAvg: result.totalRecords !== 0 ? result.createQueueDiff / result.totalRecords : 0,
+      createRunningDiffAvg: result.totalRecords !== 0 ? result.createRunningDiff / result.totalRecords : 0,
       createFinishedDiffAvg: result.totalRecords !== 0 ? result.createFinishedDiff / result.totalRecords : 0,
     }
   })

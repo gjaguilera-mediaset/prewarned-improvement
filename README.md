@@ -12,12 +12,9 @@ This project contains a minimal starter for Node.js project with Typescript, ESL
 npm install
 ```
 
+- Set up environment variables, create a copy the `.env.sample` from the root of the project naming it: `.env` and add the corresponding values to the variables.
+
 ## Usage
-- We need to add the corresponding jsons to their respective folders:
-    - `prewarmed`: Files with the prewarmed tags
-    - `pre-prewarmed`: Files from previous prewarmed implementation.
-
-
 - Start Application (Running once)
 ```bash
 npm run start:once
