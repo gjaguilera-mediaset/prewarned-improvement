@@ -1,11 +1,11 @@
 export type ComputedDifferences = {
-    createRunningDiff: number,
-    createFinishedDiff: number,
+    startRunningDiff: number,
+    startFinishedDiff: number,
     totalRecords: number,
     title: string,
 }
 
 export type ComputedDifferencesWithAverage = ComputedDifferences & {
-    createRunningDiffAvg: number,
-    createFinishedDiffAvg: number,
+    startRunningDiffAvg: number,
+    startFinishedDiffAvg: number,
 }

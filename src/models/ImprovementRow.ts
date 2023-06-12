@@ -3,6 +3,6 @@ export type ImprovementRow = {
     startedAt: string
     runningAt: string
     finishedAt: string
-    createRunningDiffSeconds: number
-    createFinishedDiffSeconds: number
+    startRunningDiffSeconds: number
+    startFinishedDiffSeconds: number
 }
