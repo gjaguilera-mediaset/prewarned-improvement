@@ -135,6 +135,7 @@ async function fetchEncodingsFromGivenRange(createdAtNewerThan: Date, createdAtO
         offset: 100 * index,
         createdAtNewerThan,
         createdAtOlderThan,
+        includeTotalCount: true,
       })
      })
 
