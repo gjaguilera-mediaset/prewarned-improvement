@@ -35,7 +35,7 @@ function getImprovementRow(item): ImprovementRow {
   }
 }
 
-async function generateOutput(outputFile: string, items: Encoding[], filterFunction): Promise<ComputedDifferences> {
+async function generateOutput(outputFile: string, items: Encoding[], filterFunction?: (item: Encoding) => boolean): Promise<ComputedDifferences> {
   const filename = path.parse(outputFile).name
 
   logger.info({ message: `Initializing writer to write content to ${outputFile}`, label: filename })
@@ -58,7 +58,7 @@ async function generateOutput(outputFile: string, items: Encoding[], filterFunct
     title: filename,
   }
 
-  const filteredItems = items.filter(filterFunction)
+  const filteredItems = filterFunction ? items.filter(filterFunction) : items
 
   const mappedRows = filteredItems.map(getImprovementRow)
   differenceSums = mappedRows.reduce((acc: ComputedDifferences, item: ImprovementRow): ComputedDifferences => {
